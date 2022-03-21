@@ -12,7 +12,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 
 @SpringBootApplication
 @ComponentScan({"com.epilog.ssccapi.adapters", "com.epilog.ssccapi.domain"})
-//@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
+@EnableAutoConfiguration(exclude={MongoAutoConfiguration.class})
 @EnableAsync
 public class SsccApiApplication extends SpringBootServletInitializer implements WebMvcConfigurer {
 
